@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Add the <b>Depot</b> and <b>Loaner</b> fields to the list that appears using either Personalize or Configure in the list menu.</p>]]></article>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>/cmdb_ci_list.do</end_point>
+        <end_point_open_mode>3</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <order>100</order>
+        <parent display_value="Configure Items">d2e908206732120083f45bb557415aed</parent>
+        <parents>d2e908206732120083f45bb557415aed,19d063d06732120083f45bb557415a5d</parents>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Loaner Request Guided Setup">19d063d06732120083f45bb557415a5d</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-11 21:14:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>02f2d8606732120083f45bb557415ac1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Add List Fields</sys_name>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
+        <sys_update_name>gsw_content_information_02f2d8606732120083f45bb557415ac1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-26 19:44:57</sys_updated_on>
+        <table/>
+        <title>Add List Fields</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=02f2d8606732120083f45bb557415ac1"/>
+</record_update>

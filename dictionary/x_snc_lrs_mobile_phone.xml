@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmdb_ci_hardware" label="Mobile phone" max_length="40" name="x_snc_lrs_mobile_phone" type="collection">
+        <element label="Phone number" max_length="40" name="phone_number" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>e6e3de8c67302200ca735bb557415acb</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="x_snc_lrs_request">
+    <x_snc_lrs_request action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_due/>
+        <additional_assignee_list/>
+        <approval>not requested</approval>
+        <approval_history/>
+        <approval_set/>
+        <assigned_to display_value="Bryant Bouliouris">2a826bf03710200044e0bfc8bcbe5de7</assigned_to>
+        <assignment_group display_value="Service Desk" name="Service Desk">d625dccec0a8016700a222a0f7900d06</assignment_group>
+        <business_duration/>
+        <business_service/>
+        <calendar_duration/>
+        <close_notes/>
+        <closed_at/>
+        <closed_by/>
+        <cmdb_ci display_value="Samsung Galaxy S6">cd91f1c467302200ca735bb557415a4d</cmdb_ci>
+        <comments/>
+        <comments_and_work_notes/>
+        <company/>
+        <contact_type/>
+        <correlation_display/>
+        <correlation_id/>
+        <delivery_plan/>
+        <delivery_task/>
+        <depot>San Diego</depot>
+        <description/>
+        <due_date/>
+        <escalation>0</escalation>
+        <expected_start/>
+        <follow_up/>
+        <group_list/>
+        <impact>3</impact>
+        <item_type>x_snc_lrs_mobile_phone</item_type>
+        <knowledge>false</knowledge>
+        <last_overdue_reminder/>
+        <location display_value="">North America</location>
+        <location_to_be_used>North America</location_to_be_used>
+        <made_sla>true</made_sla>
+        <number>LNR0001012</number>
+        <opened_at>2016-07-19 03:25:39</opened_at>
+        <opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
+        <order/>
+        <overdue_count/>
+        <parent/>
+        <pickup_reminder/>
+        <priority>4</priority>
+        <reassignment_count>0</reassignment_count>
+        <rejection_goto/>
+        <requested_for display_value="Jacinto Gawron">02826bf03710200044e0bfc8bcbe5d76</requested_for>
+        <return_reminder/>
+        <short_description>Reservation: Mobile phone from San Diego</short_description>
+        <sla_due/>
+        <state>14</state>
+        <sys_class_name>x_snc_lrs_request</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-07-19 03:25:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e6e3de8c67302200ca735bb557415acb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>beth.anglin</sys_updated_by>
+        <sys_updated_on>2016-07-19 16:47:44</sys_updated_on>
+        <time_worked/>
+        <upon_approval>proceed</upon_approval>
+        <upon_reject>cancel</upon_reject>
+        <urgency>3</urgency>
+        <user_input/>
+        <variables/>
+        <watch_list/>
+        <wf_activity/>
+        <work_end>2016-07-27 19:00:00</work_end>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start>2016-07-25 15:00:00</work_start>
+    </x_snc_lrs_request>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-07-19 16:52:55</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>03dc0d5867702200ca735bb557415a30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LNR0001012</sys_name>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
+        <sys_update_name>sys_metadata_link_03dc0d5867702200ca735bb557415a30</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-07-19 16:52:55</sys_updated_on>
+        <tablename>x_snc_lrs_request</tablename>
+    </sys_metadata_link>
+</record_update>

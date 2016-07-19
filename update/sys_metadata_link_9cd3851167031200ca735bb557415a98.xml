@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5ee4380167031200ca735bb557415a38</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_attachment">
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ffffff</average_image_color>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>Pasted Image.png</file_name>
+        <image_height>43</image_height>
+        <image_width>91</image_width>
+        <size_bytes>6278</size_bytes>
+        <size_compressed>6301</size_compressed>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-25 23:13:51</sys_created_on>
+        <sys_id>5ee4380167031200ca735bb557415a38</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-25 23:13:52</sys_updated_on>
+        <table_name>gsw_content_information</table_name>
+        <table_sys_id>f934b40167031200ca735bb557415ab6</table_sys_id>
+    </sys_attachment>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-26 18:57:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9cd3851167031200ca735bb557415a98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pasted Image.png</sys_name>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
+        <sys_update_name>sys_metadata_link_9cd3851167031200ca735bb557415a98</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-26 18:57:27</sys_updated_on>
+        <tablename>sys_attachment</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Loaner Request" max_length="40" name="x_snc_lrs_request" type="collection">
+        <element choice="1" default="javascript:gs.getProperty('x_snc_lrs.default.depot');" label="Depot" max_length="40" name="depot" type="choice">
+            <choice>
+                <element label="Atlanta" sequence="0" value="Atlanta"/>
+                <element label="Chicago" sequence="1" value="Chicago"/>
+                <element label="London" sequence="2" value="London"/>
+                <element label="San Diego" sequence="3" value="San Diego"/>
+                <element label="Sydney" sequence="4" value="Sydney"/>
+            </choice>
+        </element>
+        <element choice="3" default="javascript:gs.getProperty('x_snc_lrs.default.item_type');" label="Item type" max_length="40" name="item_type" type="choice">
+            <choice>
+                <element label="Laptop" sequence="0" value="cmdb_ci_computer"/>
+                <element label="Mobile phone" sequence="1" value="x_snc_lrs_mobile_phone"/>
+                <element label="Projector" sequence="2" value="x_snc_lrs_projector"/>
+                <element label="Vehicle" sequence="3" value="x_snc_lrs_vehicle"/>
+            </choice>
+        </element>
+        <element label="Last overdue reminder" max_length="40" name="last_overdue_reminder" type="glide_date_time"/>
+        <element label="Location to be used" max_length="40" name="location_to_be_used" type="string"/>
+        <element label="Overdue count" max_length="40" name="overdue_count" type="integer"/>
+        <element label="Pickup reminder" max_length="40" name="pickup_reminder" type="glide_date_time"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Requested for" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
+        <element label="Return reminder" max_length="40" name="return_reminder" type="glide_date_time"/>
+    </element>
+</database>

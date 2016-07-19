@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Set the <b>Loaner</b> field to <b>true</b> on any item you wish to add to the loaner pool. Additionally, use the <b>Depot</b> field to determine where that item may be picked up and returned. These two values combined with the requested start/end time determine which assets are available on loaner requests.</p>]]></article>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>/cmdb_ci_list.do</end_point>
+        <end_point_open_mode>3</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <order>200</order>
+        <parent display_value="Configure Items">d2e908206732120083f45bb557415aed</parent>
+        <parents>d2e908206732120083f45bb557415aed,19d063d06732120083f45bb557415a5d</parents>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Loaner Request Guided Setup">19d063d06732120083f45bb557415a5d</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-11 21:21:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d3345c606732120083f45bb557415a38</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Add Items</sys_name>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
+        <sys_update_name>gsw_content_information_d3345c606732120083f45bb557415a38</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-26 19:45:02</sys_updated_on>
+        <table/>
+        <title>Add Items</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3345c606732120083f45bb557415a38"/>
+</record_update>

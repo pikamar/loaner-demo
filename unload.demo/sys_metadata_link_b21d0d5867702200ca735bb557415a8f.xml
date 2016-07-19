@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>50a9680d3790200044e0bfc8bcbe5d89</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="cmdb_ci_computer">
+    <cmdb_ci_computer action="INSERT_OR_UPDATE">
+        <asset display_value="P1000685 - Apple MacBook Air 13&quot;">44a9680d3790200044e0bfc8bcbe5d88</asset>
+        <asset_tag>P1000685</asset_tag>
+        <assigned>2015-02-08 07:00:00</assigned>
+        <assigned_to display_value="Margarito Kornbau">ba82abf03710200044e0bfc8bcbe5d23</assigned_to>
+        <assignment_group/>
+        <attributes/>
+        <can_print>false</can_print>
+        <category>Hardware</category>
+        <cd_rom>false</cd_rom>
+        <cd_speed/>
+        <change_control/>
+        <chassis_type/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company display_value="ACME North America">31bea3d53790200044e0bfc8bcbe5dec</company>
+        <correlation_id/>
+        <cost>1599.99</cost>
+        <cost_cc>USD</cost_cc>
+        <cost_center display_value="Sales">7fb1cc99c0a80a6d30c04574d14c0acf</cost_center>
+        <cpu_core_count>1</cpu_core_count>
+        <cpu_core_thread/>
+        <cpu_count>1</cpu_count>
+        <cpu_manufacturer/>
+        <cpu_name/>
+        <cpu_speed/>
+        <cpu_type/>
+        <default_gateway/>
+        <delivery_date>2014-07-21 08:00:00</delivery_date>
+        <department display_value="Sales">221db0edc611228401760aec06c9d929</department>
+        <discovery_source/>
+        <disk_space/>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <fault_count>0</fault_count>
+        <first_discovered/>
+        <floppy/>
+        <form_factor/>
+        <fqdn/>
+        <gl_account/>
+        <hardware_status>installed</hardware_status>
+        <hardware_substatus/>
+        <install_date>2014-09-17 07:00:00</install_date>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <justification/>
+        <last_discovered/>
+        <lease_id/>
+        <location display_value="5505 Stevens Way, San Diego,CA">f48b24f70a0a0ba70080749e929ea176</location>
+        <mac_address/>
+        <maintenance_schedule/>
+        <managed_by/>
+        <manufacturer display_value="Apple">b7e9e843c0a80169009a5a485bb2a2b5</manufacturer>
+        <model_id display_value="Apple MacBook Air 13&quot;">c402054f1b1310002502fbcd2c0713f7</model_id>
+        <model_number/>
+        <monitor>false</monitor>
+        <name>MacBook Air 13"</name>
+        <operational_status>1</operational_status>
+        <order_date>2014-07-02 08:00:00</order_date>
+        <os>Mac OS 10 (OS/X)</os>
+        <os_address_width/>
+        <os_domain/>
+        <os_service_pack/>
+        <os_version/>
+        <owned_by/>
+        <po_number>PO100008</po_number>
+        <purchase_date>2014-07-17</purchase_date>
+        <ram/>
+        <schedule/>
+        <serial_number>EWE-740-E20758-SB</serial_number>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <subcategory>Computer</subcategory>
+        <support_group/>
+        <supported_by/>
+        <sys_class_name>cmdb_ci_computer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2012-02-18 08:13:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>50a9680d3790200044e0bfc8bcbe5d89</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2016-07-19 10:11:44</sys_updated_on>
+        <unverified>false</unverified>
+        <vendor display_value="Apple">b7e9e843c0a80169009a5a485bb2a2b5</vendor>
+        <virtual>false</virtual>
+        <warranty_expiration>2017-09-16</warranty_expiration>
+        <x_snc_lrs_depot>Atlanta</x_snc_lrs_depot>
+        <x_snc_lrs_isloaner>true</x_snc_lrs_isloaner>
+    </cmdb_ci_computer>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-07-19 16:53:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b21d0d5867702200ca735bb557415a8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MacBook Air 13"</sys_name>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
+        <sys_update_name>sys_metadata_link_b21d0d5867702200ca735bb557415a8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-07-19 16:53:59</sys_updated_on>
+        <tablename>cmdb_ci_computer</tablename>
+    </sys_metadata_link>
+</record_update>
