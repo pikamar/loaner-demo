@@ -6,63 +6,129 @@
         <description>Create the initial formatter properties for the loaner request and loaner task forms&#13;
 Remove the New/Edit button from the approvers related list</description>
         <flush_cache>false</flush_cache>
-        <name>Loaner Activity Formatter Properties</name>
+        <name>Loaner  Request Updates</name>
         <run_once>true</run_once>
-        <script><![CDATA[// Add properties to the global scope
+        <script><![CDATA[addProperties();
+omitApprovalButtons();
+fixDemoDataDates();
 
-var propList = [
+/*
+ * Add properties to the global scope
+ *
+ */
+function addProperties() {
+	var propList = [
 	{
-	 'suffix' : null,
-	 'name' : 'glide.ui.x_snc_lrs_task_activity.fields',
-	 'description' : 'Activity formatter fields for loaner task form',
-	 'type' : 'string',
-	 'value' : 'assigned_to,state,opened_by,work_notes,comments,*Attachments*'
+		'suffix' : null,
+		'name' : 'glide.ui.x_snc_lrs_task_activity.fields',
+		'description' : 'Activity formatter fields for loaner task form',
+		'type' : 'string',
+		'value' : 'assigned_to,state,opened_by,work_notes,comments,*Attachments*'
 	},
 	{
-	 'suffix' : null,
-	 'name' : 'glide.ui.x_snc_lrs_request_activity.fields',
-	 'description' : 'Activity formatter fields for loaner request form',
-	 'type' : 'string',
-	 'value' : 'assigned_to,cmdb_ci,state,work_notes,comments,*Attachments*,assignment_group,*Email*,depot,item_type,work_end,work_start'
-	 }
-];
-
-for (var i = 0; i < propList.length; i++) {
-	var p = new GlideRecord('sys_properties');
-	p.newRecord();
-	p.setsuffix   = propList[i].suffix;
-	p.name        = propList[i].name;
-	p.description = propList[i].description;
-	p.type        = propList[i].type;
-	p.value       = propList[i].value;
-	p.insert();
+		'suffix' : null,
+		'name' : 'glide.ui.x_snc_lrs_request_activity.fields',
+		'description' : 'Activity formatter fields for loaner request form',
+		'type' : 'string',
+		'value' : 'assigned_to,cmdb_ci,state,work_notes,comments,*Attachments*,assignment_group,*Email*,depot,item_type,work_end,work_start'
+	}
+	];
+	
+	for (var i = 0; i < propList.length; i++) {
+		var p = new GlideRecord('sys_properties');
+		p.newRecord();
+		p.setsuffix   = propList[i].suffix;
+		p.name        = propList[i].name;
+		p.description = propList[i].description;
+		p.type        = propList[i].type;
+		p.value       = propList[i].value;
+		p.insert();
+	}
 }
 
-// Remove the New/Edit buttons from the related list
-var rl = new GlideRecord('sys_ui_list_control');
-rl.newRecord();
-rl.name             = 'x_snc_lrs_request';
-rl.label            = 'Approvers';
-rl.related_list     = 'sysapproval_approver.sysapproval';
-rl.omit_edit_button = true;
-rl.omit_new_button  = true;
-rl.insert();
+/*
+ * Remove the New/Edit buttons from the related list
+ *
+ */
+function omitApprovalButtons() {
+	
+	var rl = new GlideRecord('sys_ui_list_control');
+	rl.newRecord();
+	rl.name             = 'x_snc_lrs_request';
+	rl.label            = 'Approvers';
+	rl.related_list     = 'sysapproval_approver.sysapproval';
+	rl.omit_edit_button = true;
+	rl.omit_new_button  = true;
+	rl.insert();
+}
 
-]]></script>
+/*
+ * Fix the dates on the demo records so they are current
+ *
+ */
+function fixDemoDataDates() {
+	var gr = new GlideRecord("x_snc_lrs_request");
+	gr.query();
+	
+	var diffDayVar = _getDateDiff('desc');
+	
+	while (gr.next()) {
+		gr.sys_created_on   = _changeDate(gr.sys_created_on, diffDayVar);
+		gr.sys_updated_on   = _changeDate(gr.sys_updated_on, diffDayVar);
+		gr.work_start       = _changeDate(gr.work_start, diffDayVar);
+		gr.work_end         = _changeDate(gr.work_end, diffDayVar);
+		gr.pickup_reminder  = _changeDate(gr.pickup_reminder, diffDayVar);
+		gr.return_reminder  = _changeDate(gr.return_reminder, diffDayVar);
+		gr.overdue_reminder = _changeDate(gr.overdue_reminder, diffDayVar);
+		gr.opened_at        = _changeDate(gr.opened_at, diffDayVar);
+		gr.closed_at        = _changeDate(gr.closed_at, diffDayVar);
+		gr.sys_updated_on   = _changeDate(gr.sys_updated_on, diffDayVar);
+		
+		gr.autoSysFields(false);  // Do not update sys_updated_on, sys_updated_by, and sys_mod_count
+		gr.setWorkflow(false);    // Do not run any other business rules
+		gr.update();
+	}
+}
+
+function _changeDate(field, diff) {
+	var tempDate = new GlideDateTime(field);
+	tempDate.addDays(diff - 1);
+	
+	return tempDate;
+}
+
+function _getDateDiff(sortOrder) {
+	var gr = new GlideRecord("x_snc_lrs_request");
+	if (sortOrder == 'desc') {
+		gr.orderByDesc('sys_created_on');
+	} else {
+		gr.orderBy('sys_created_on');
+	}
+	gr.setLimit(1);
+	gr.query();
+	if (gr.next()) {
+		var nowDate = new GlideDateTime(gs.nowNoTZ()).getDate();
+		var openDate = new GlideDateTime(gr.sys_created_on).getDate();
+		var diffDays = ((gs.dateDiff(openDate, nowDate, true) / 60) / 60) / 24;
+		gs.log('Current date is ' + nowDate + ' and most recent request is dated ' + openDate);
+		gs.log('Diff days is ' + diffDays);
+	}
+	return diffDays;
+}]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-03-30 23:11:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>48fa762067221200f5c55bb557415a07</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Loaner Activity Formatter Properties</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Loaner  Request Updates</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sys_script_fix_48fa762067221200f5c55bb557415a07</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-19 15:46:40</sys_updated_on>
+        <sys_updated_on>2016-07-20 02:00:04</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
