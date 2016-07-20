@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Loaner Request" max_length="40" name="x_snc_lrs_request" sizeclass="36" type="collection">
+    <element audit="true" extends="task" label="Loaner Request" max_length="40" name="x_snc_lrs_request" sizeclass="37" type="collection">
         <element choice="1" default="javascript:gs.getProperty('x_snc_lrs.default.depot');" label="Depot" max_length="40" name="depot" type="choice">
             <choice>
                 <element label="Atlanta" sequence="0" value="Atlanta"/>

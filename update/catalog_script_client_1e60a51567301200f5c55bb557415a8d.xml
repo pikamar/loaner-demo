@@ -18,20 +18,20 @@ loaner_error_end_before_start</messages>
         <name>Check Start/End/Dates</name>
         <order/>
         <script><![CDATA[function onSubmit() {
-   var jsStartDate = new Date(g_form.getValue('work_start'));
-   var jsEndDate   = new Date(g_form.getValue('work_end'));
-   var jsToday     = new Date();
-   
-   if (jsStartDate < jsToday) {
-      getMessage('loaner_error_start_before_today', function(val){ alert(val); });
-	  return false;
-   }
-   
-   if (jsEndDate < jsStartDate) {
-      getMessage('loaner_error_end_before_start', function(val) { alert(val);});
-	  return false;
-   }
-   return true;   
+	var jsStartDate = new Date(g_form.getValue('work_start'));
+	var jsEndDate   = new Date(g_form.getValue('work_end'));
+	var jsToday     = new Date();
+	
+	if (jsStartDate < jsToday) {		
+		alert(getMessage('loaner_error_start_before_today'));
+		return false;
+	}
+	
+	if (jsEndDate < jsStartDate) {
+		alert(getMessage('loaner_error_end_before_start'));
+		return false;
+	}
+	return true;
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -40,7 +40,7 @@ loaner_error_end_before_start</messages>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e60a51567301200f5c55bb557415a8d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Check Start/End/Dates</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
@@ -49,7 +49,7 @@ loaner_error_end_before_start</messages>
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>catalog_script_client_1e60a51567301200f5c55bb557415a8d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-20 16:41:33</sys_updated_on>
+        <sys_updated_on>2016-07-20 21:25:26</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
