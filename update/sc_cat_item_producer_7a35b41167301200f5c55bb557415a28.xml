@@ -5,7 +5,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</category>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
@@ -66,7 +66,7 @@ gs.addInfoMessage(gs.getMessage('loaner_recorded'));
         <sys_created_on>2016-01-05 21:33:58</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>7a35b41167301200f5c55bb557415a28</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Loaner Items</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
@@ -74,7 +74,7 @@ gs.addInfoMessage(gs.getMessage('loaner_recorded'));
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sc_cat_item_producer_7a35b41167301200f5c55bb557415a28</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-19 17:11:27</sys_updated_on>
+        <sys_updated_on>2016-07-20 16:05:01</sys_updated_on>
         <table_name>x_snc_lrs_request</table_name>
         <template/>
         <type>item</type>
