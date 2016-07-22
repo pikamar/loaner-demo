@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <before>false</before>
         <description>Create the initial formatter properties for the loaner request and loaner task forms&#13;
-Remove the New/Edit button from the approvers related list</description>
+Remove the New/Edit button from the approvers related list&#13;
+// DIsabled 2016-07-22 - now part of the app</description>
         <flush_cache>false</flush_cache>
         <name>Loaner  Request Updates</name>
         <run_once>true</run_once>
@@ -63,7 +64,7 @@ Remove the New/Edit button from the approvers related list</description>
         <sys_created_on>2016-03-30 23:11:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>48fa762067221200f5c55bb557415a07</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Loaner  Request Updates</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
@@ -71,7 +72,7 @@ Remove the New/Edit button from the approvers related list</description>
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sys_script_fix_48fa762067221200f5c55bb557415a07</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-22 01:29:50</sys_updated_on>
+        <sys_updated_on>2016-07-22 17:06:20</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
