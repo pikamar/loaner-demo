@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description>Update the various date/times on the loaner demo data</description>
+        <flush_cache>false</flush_cache>
+        <name>Loaner Request Demo Data Update</name>
+        <run_once>true</run_once>
+        <script><![CDATA[/*
+ * Fix the dates on the demo records so they are current
+ *
+ */
+(function () {
+	var gr = new GlideRecord("x_snc_lrs_request");
+	gr.query();
+	
+	var diffDayVar = _getDateDiff('desc');
+	
+	while (gr.next()) {
+		gr.sys_created_on   = _changeDate(gr.sys_created_on, diffDayVar);
+		gr.sys_updated_on   = _changeDate(gr.sys_updated_on, diffDayVar);
+		gr.work_start       = _changeDate(gr.work_start, diffDayVar);
+		gr.work_end         = _changeDate(gr.work_end, diffDayVar);
+		gr.pickup_reminder  = _changeDate(gr.pickup_reminder, diffDayVar);
+		gr.return_reminder  = _changeDate(gr.return_reminder, diffDayVar);
+		gr.overdue_reminder = _changeDate(gr.overdue_reminder, diffDayVar);
+		gr.opened_at        = _changeDate(gr.opened_at, diffDayVar);
+		gr.closed_at        = _changeDate(gr.closed_at, diffDayVar);
+		gr.sys_updated_on   = _changeDate(gr.sys_updated_on, diffDayVar);
+		
+		gr.autoSysFields(false);  // Do not update sys_updated_on, sys_updated_by, and sys_mod_count
+		gr.setWorkflow(false);    // Do not run any other business rules
+		gr.update();
+	}
+})();
+
+function _changeDate(field, diff) {
+	var tempDate = new GlideDateTime(field);
+	tempDate.addDays(diff - 1);
+	
+	return tempDate;
+}
+
+function _getDateDiff(sortOrder) {
+	var diffDays = 0;
+	var gr = new GlideRecord("x_snc_lrs_request");
+	if (sortOrder == 'desc') {
+		gr.orderByDesc('sys_created_on');
+	} else {
+		gr.orderBy('sys_created_on');
+	}
+	gr.setLimit(1);
+	gr.query();
+	if (gr.next()) {
+		var nowDate = new GlideDateTime(gs.nowNoTZ()).getDate();
+		var openDate = new GlideDateTime(gr.sys_created_on).getDate();
+		diffDays = ((gs.dateDiff(openDate, nowDate, true) / 60) / 60) / 24;
+		gs.log('Current date is ' + nowDate + ' and most recent request is dated ' + openDate);
+		gs.log('Diff days is ' + diffDays);
+	}
+	return diffDays;
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-07-22 01:26:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3c755d4167302200ca735bb557415a5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loaner Request Demo Data Update</sys_name>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
+        <sys_update_name>sys_script_fix_3c755d4167302200ca735bb557415a5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-07-22 01:26:52</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

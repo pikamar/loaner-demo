@@ -8,16 +8,11 @@ Remove the New/Edit button from the approvers related list</description>
         <flush_cache>false</flush_cache>
         <name>Loaner  Request Updates</name>
         <run_once>true</run_once>
-        <script><![CDATA[addProperties();
-omitApprovalButtons();
-fixDemoDataDates();
-addItilToServiceDeskGroup();
-
-/*
+        <script><![CDATA[/*
  * Add properties to the global scope
  *
  */
-function addProperties() {
+(function () {
 	var propList = [
 	{
 		'suffix' : null,
@@ -45,14 +40,13 @@ function addProperties() {
 		p.value       = propList[i].value;
 		p.insert();
 	}
-}
+})();
 
 /*
  * Remove the New/Edit buttons from the related list
  *
  */
-function omitApprovalButtons() {
-	
+(function () {	
 	var rl = new GlideRecord('sys_ui_list_control');
 	rl.newRecord();
 	rl.name             = 'x_snc_lrs_request';
@@ -61,81 +55,13 @@ function omitApprovalButtons() {
 	rl.omit_edit_button = true;
 	rl.omit_new_button  = true;
 	rl.insert();
-}
-
-/*
- * Fix the dates on the demo records so they are current
- *
- */
-function fixDemoDataDates() {
-	var gr = new GlideRecord("x_snc_lrs_request");
-	gr.query();
-	
-	var diffDayVar = _getDateDiff('desc');
-	
-	while (gr.next()) {
-		gr.sys_created_on   = _changeDate(gr.sys_created_on, diffDayVar);
-		gr.sys_updated_on   = _changeDate(gr.sys_updated_on, diffDayVar);
-		gr.work_start       = _changeDate(gr.work_start, diffDayVar);
-		gr.work_end         = _changeDate(gr.work_end, diffDayVar);
-		gr.pickup_reminder  = _changeDate(gr.pickup_reminder, diffDayVar);
-		gr.return_reminder  = _changeDate(gr.return_reminder, diffDayVar);
-		gr.overdue_reminder = _changeDate(gr.overdue_reminder, diffDayVar);
-		gr.opened_at        = _changeDate(gr.opened_at, diffDayVar);
-		gr.closed_at        = _changeDate(gr.closed_at, diffDayVar);
-		gr.sys_updated_on   = _changeDate(gr.sys_updated_on, diffDayVar);
-		
-		gr.autoSysFields(false);  // Do not update sys_updated_on, sys_updated_by, and sys_mod_count
-		gr.setWorkflow(false);    // Do not run any other business rules
-		gr.update();
-	}
-}
-
-function _changeDate(field, diff) {
-	var tempDate = new GlideDateTime(field);
-	tempDate.addDays(diff - 1);
-	
-	return tempDate;
-}
-
-function _getDateDiff(sortOrder) {
-	var gr = new GlideRecord("x_snc_lrs_request");
-	if (sortOrder == 'desc') {
-		gr.orderByDesc('sys_created_on');
-	} else {
-		gr.orderBy('sys_created_on');
-	}
-	gr.setLimit(1);
-	gr.query();
-	if (gr.next()) {
-		var nowDate = new GlideDateTime(gs.nowNoTZ()).getDate();
-		var openDate = new GlideDateTime(gr.sys_created_on).getDate();
-		var diffDays = ((gs.dateDiff(openDate, nowDate, true) / 60) / 60) / 24;
-		gs.log('Current date is ' + nowDate + ' and most recent request is dated ' + openDate);
-		gs.log('Diff days is ' + diffDays);
-	}
-	return diffDays;
-}
-
-/*
- * Add the ITIL role to the Service Desk group
- *
- */
-function addItilToServiceDeskGroup() {
-	var roleID = '282bf1fac6112285017366cb5f867469';
-var groupID = 'd625dccec0a8016700a222a0f7900d06';
-var gr = new GlideRecord('sys_group_has_role');
-gr.newRecord();
-gr.group = groupID;
-gr.role = roleID;
-gr.insert();
-}]]></script>
+})();]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-03-30 23:11:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>48fa762067221200f5c55bb557415a07</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Loaner  Request Updates</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
@@ -143,7 +69,7 @@ gr.insert();
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sys_script_fix_48fa762067221200f5c55bb557415a07</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-20 22:40:35</sys_updated_on>
+        <sys_updated_on>2016-07-22 01:25:51</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
