@@ -29,8 +29,8 @@
         <correlation_id/>
         <delivery_plan/>
         <delivery_task/>
-        <description>Ensure the machine is in good working order.&#13;
-Ensure all accessories are accounted for.&#13;
+        <description>Ensure the machine is in good working order.
+Ensure all accessories are accounted for.
 Load any software requested.</description>
         <due_date>2016-07-19 16:29:53</due_date>
         <escalation>0</escalation>
@@ -41,15 +41,15 @@ Load any software requested.</description>
         <knowledge>false</knowledge>
         <location/>
         <made_sla>true</made_sla>
-        <number>LTASK0001006</number>
+        <number>LTASK0000006</number>
         <opened_at>2016-07-19 16:29:53</opened_at>
         <opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
         <order/>
-        <parent display_value="LNR0001115">4f47415867702200ca735bb557415afb</parent>
+        <parent display_value="LNR0000115">4f47415867702200ca735bb557415afb</parent>
         <priority>4</priority>
         <reassignment_count>0</reassignment_count>
         <rejection_goto/>
-        <request display_value="LNR0001115">4f47415867702200ca735bb557415afb</request>
+        <request display_value="LNR0000115">4f47415867702200ca735bb557415afb</request>
         <short_description>Pre-Deployment Prep</short_description>
         <sla_due/>
         <state>3</state>
@@ -82,15 +82,15 @@ Load any software requested.</description>
         <sys_created_on>2016-07-19 16:53:12</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>dbec0d5867702200ca735bb557415a57</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>LTASK0001006</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>LTASK0000006</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sys_metadata_link_dbec0d5867702200ca735bb557415a57</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-19 16:53:12</sys_updated_on>
+        <sys_updated_on>2016-07-23 20:41:48</sys_updated_on>
         <tablename>x_snc_lrs_task</tablename>
     </sys_metadata_link>
 </record_update>
