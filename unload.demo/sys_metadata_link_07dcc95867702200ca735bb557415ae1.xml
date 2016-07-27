@@ -44,7 +44,7 @@
         <location_to_be_used>North America</location_to_be_used>
         <made_sla>true</made_sla>
         <number>LNR0000001</number>
-        <opened_at>2016-07-25 00:15:05</opened_at>
+        <opened_at>2016-07-19 00:15:05</opened_at>
         <opened_by display_value="Joe Employee">681ccaf9c0a8016400b98a06818d57c7</opened_by>
         <order/>
         <overdue_count>2</overdue_count>
@@ -54,19 +54,19 @@
         <reassignment_count>0</reassignment_count>
         <rejection_goto/>
         <requested_for display_value="Joe Employee">681ccaf9c0a8016400b98a06818d57c7</requested_for>
-        <return_reminder>2016-07-25 15:26:34</return_reminder>
+        <return_reminder>2016-07-19 15:26:34</return_reminder>
         <short_description>Reservation: Laptop from San Diego</short_description>
         <sla_due/>
         <state>17</state>
         <sys_class_name>x_snc_lrs_request</sys_class_name>
         <sys_created_by>employee</sys_created_by>
-        <sys_created_on>2016-07-25 00:15:05</sys_created_on>
+        <sys_created_on>2016-07-19 00:15:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f558a90467302200ca735bb557415a5d</sys_id>
         <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-08-04 20:39:40</sys_updated_on>
+        <sys_updated_on>2016-07-23 20:39:40</sys_updated_on>
         <time_worked/>
         <upon_approval>proceed</upon_approval>
         <upon_reject>cancel</upon_reject>
@@ -75,10 +75,10 @@
         <variables/>
         <watch_list>681ccaf9c0a8016400b98a06818d57c7</watch_list>
         <wf_activity/>
-        <work_end>2016-07-26 00:00:00</work_end>
+        <work_end>2016-07-20 00:00:00</work_end>
         <work_notes/>
         <work_notes_list/>
-        <work_start>2016-07-25 15:00:00</work_start>
+        <work_start>2016-07-19 15:00:00</work_start>
     </x_snc_lrs_request>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color/>
@@ -105,7 +105,7 @@
         <sys_created_on>2016-07-19 16:52:54</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>07dcc95867702200ca735bb557415ae1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>LNR0000001</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
@@ -113,7 +113,7 @@
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sys_metadata_link_07dcc95867702200ca735bb557415ae1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-27 01:50:43</sys_updated_on>
+        <sys_updated_on>2016-07-27 01:54:32</sys_updated_on>
         <tablename>x_snc_lrs_request</tablename>
     </sys_metadata_link>
 </record_update>
