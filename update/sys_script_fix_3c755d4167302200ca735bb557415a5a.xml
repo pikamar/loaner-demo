@@ -66,7 +66,7 @@ function _getDateDiff(sortOrder) {
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-22 01:26:52</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3c755d4167302200ca735bb557415a5a</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Loaner Request Demo Data Update</sys_name>

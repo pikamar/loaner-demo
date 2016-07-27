@@ -90,7 +90,7 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-19 02:38:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e959424c67302200ca735bb557415a21</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Currently Checked Out</sys_name>

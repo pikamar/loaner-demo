@@ -17,11 +17,11 @@
         <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Hardware" name="cmdb_ci_hardware">651074b0673212004ce75bb557415a67</super_class>
+        <super_class display_value="Hardware" name="cmdb_ci_hardware">95ba7481673022009b985bb557415a59</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-19 00:51:02</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a4a0398467302200ca735bb557415ac2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Vehicle</sys_name>

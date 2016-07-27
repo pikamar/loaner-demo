@@ -34,7 +34,7 @@
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-23 13:55:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8ef9c96567302200bb2c5bb557415aaa</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>get_laptop_password</sys_name>

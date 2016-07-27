@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Loaner task" max_length="40" name="x_snc_lrs_task" sizeclass="7" type="collection">
+    <element audit="true" extends="task" label="Loaner task" max_length="40" name="x_snc_lrs_task" type="collection">
         <element label="Request" max_length="32" name="request" read_only="true" reference="x_snc_lrs_request" type="reference"/>
     </element>
 </database>

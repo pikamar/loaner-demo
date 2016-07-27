@@ -9,7 +9,7 @@
         <sys_class_name>gsw_status_of_content</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-04-25 22:25:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>36c96c4167031200ca735bb557415aff</sys_id>
         <sys_mod_count>51</sys_mod_count>
         <sys_name>1</sys_name>

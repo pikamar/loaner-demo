@@ -1190,39 +1190,6 @@ answer = true;&#13;
         <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">81ff095367321200f5c55bb557415a05</condition>
-        <from display_value="State == Post Deployment">4dff095367321200f5c55bb557415a04</from>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-04-20 14:42:38</sys_created_on>
-        <sys_id>d9ff095367321200f5c55bb557415a08</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
-        <to display_value="Post Deployment">05ff095367321200f5c55bb557415a05</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">0dff095367321200f5c55bb557415a00</condition>
-        <from display_value="Begin">c9ff095367321200f5c55bb557415a00</from>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-04-20 14:42:38</sys_created_on>
-        <sys_id>1dff095367321200f5c55bb557415a08</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
-        <to display_value="State == Deployment Prep">01ff095367321200f5c55bb557415a01</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">45ff095367321200f5c55bb557415a01</condition>
-        <from display_value="State == Deployment Prep">01ff095367321200f5c55bb557415a01</from>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-04-20 14:42:38</sys_created_on>
-        <sys_id>5dff095367321200f5c55bb557415a08</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
-        <to display_value="Pre deployment prep">c5ff095367321200f5c55bb557415a01</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
         <condition display_value="Always">85ff095367321200f5c55bb557415a04</condition>
         <from display_value="Pre deployment prep">c5ff095367321200f5c55bb557415a01</from>
         <sys_created_by>admin</sys_created_by>
@@ -1265,6 +1232,39 @@ answer = true;&#13;
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
         <to display_value="End">8dff095367321200f5c55bb557415a00</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">81ff095367321200f5c55bb557415a05</condition>
+        <from display_value="State == Post Deployment">4dff095367321200f5c55bb557415a04</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-20 14:42:38</sys_created_on>
+        <sys_id>d9ff095367321200f5c55bb557415a08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
+        <to display_value="Post Deployment">05ff095367321200f5c55bb557415a05</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0dff095367321200f5c55bb557415a00</condition>
+        <from display_value="Begin">c9ff095367321200f5c55bb557415a00</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-20 14:42:38</sys_created_on>
+        <sys_id>1dff095367321200f5c55bb557415a08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
+        <to display_value="State == Deployment Prep">01ff095367321200f5c55bb557415a01</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">45ff095367321200f5c55bb557415a01</condition>
+        <from display_value="State == Deployment Prep">01ff095367321200f5c55bb557415a01</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-20 14:42:38</sys_created_on>
+        <sys_id>5dff095367321200f5c55bb557415a08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-20 14:42:38</sys_updated_on>
+        <to display_value="Pre deployment prep">c5ff095367321200f5c55bb557415a01</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>

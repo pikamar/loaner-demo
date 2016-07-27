@@ -10,7 +10,7 @@
         <next_question/>
         <order>100</order>
         <payload_name/>
-        <question display_value="Task" name="Task">62df6870673212004ce75bb557415a81</question>
+        <question display_value="Task" name="Task">966a7841673022009b985bb557415a7f</question>
         <roles/>
         <script/>
         <sys_class_name>sys_wizard_answer</sys_class_name>
@@ -20,7 +20,7 @@
         <sys_id>7236250467302200ca735bb557415a90</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Loaner Request</sys_name>
-        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>

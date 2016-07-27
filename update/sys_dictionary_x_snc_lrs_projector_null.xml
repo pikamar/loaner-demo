@@ -51,17 +51,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-19 00:49:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>f150f58467302200ca735bb557415ac3</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>62558fa667302200bb2c5bb557415aef</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_lrs_projector</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
-        <sys_update_name>sys_dictionary_x_snc_lrs_projector_null</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-19 00:49:27</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_snc_lrs_projector_NULL</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2016-07-27 01:25:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -6,7 +6,7 @@
         <sys_class_name>sys_auth_profile_basic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-23 12:29:13</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>13c6b8e167302200bb2c5bb557415a7c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Password vault</sys_name>

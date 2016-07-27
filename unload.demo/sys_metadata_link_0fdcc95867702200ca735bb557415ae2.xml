@@ -44,7 +44,7 @@
         <location_to_be_used>North America</location_to_be_used>
         <made_sla>true</made_sla>
         <number>LNR0000005</number>
-        <opened_at>2016-07-19 02:06:18</opened_at>
+        <opened_at>2016-07-25 02:06:18</opened_at>
         <opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
         <order/>
         <overdue_count>4</overdue_count>
@@ -54,19 +54,19 @@
         <reassignment_count>0</reassignment_count>
         <rejection_goto/>
         <requested_for display_value="Rachel Larrison">0e826bf03710200044e0bfc8bcbe5d5b</requested_for>
-        <return_reminder>2016-07-19 02:26:35</return_reminder>
+        <return_reminder>2016-07-25 02:26:35</return_reminder>
         <short_description>Reservation: Laptop from Atlanta</short_description>
         <sla_due/>
         <state>17</state>
         <sys_class_name>x_snc_lrs_request</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-07-19 02:06:18</sys_created_on>
+        <sys_created_on>2016-07-25 02:06:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6be1060c67302200ca735bb557415ad4</sys_id>
         <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-23 20:39:41</sys_updated_on>
+        <sys_updated_on>2016-08-04 20:39:41</sys_updated_on>
         <time_worked/>
         <upon_approval>proceed</upon_approval>
         <upon_reject>cancel</upon_reject>
@@ -75,10 +75,10 @@
         <variables/>
         <watch_list/>
         <wf_activity/>
-        <work_end>2016-07-18 15:00:00</work_end>
+        <work_end>2016-07-24 15:00:00</work_end>
         <work_notes/>
         <work_notes_list/>
-        <work_start>2016-07-16 00:00:00</work_start>
+        <work_start>2016-07-22 00:00:00</work_start>
     </x_snc_lrs_request>
 </record_update>
 ]]></payload>
@@ -87,7 +87,7 @@
         <sys_created_on>2016-07-19 16:52:55</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>0fdcc95867702200ca735bb557415ae2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>LNR0000005</sys_name>
         <sys_package display_value="Loaner Request" source="x_snc_lrs">a50dc98c13f0220068ac58a12244b079</sys_package>
         <sys_policy/>
@@ -95,7 +95,7 @@
         <sys_scope display_value="Loaner Request">a50dc98c13f0220068ac58a12244b079</sys_scope>
         <sys_update_name>sys_metadata_link_0fdcc95867702200ca735bb557415ae2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-07-23 20:41:28</sys_updated_on>
+        <sys_updated_on>2016-07-27 01:50:44</sys_updated_on>
         <tablename>x_snc_lrs_request</tablename>
     </sys_metadata_link>
 </record_update>
