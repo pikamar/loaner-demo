@@ -85,7 +85,7 @@
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-19 16:52:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>83dc0d5867702200ca735bb557415a37</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>LNR0000031</sys_name>

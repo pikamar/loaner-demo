@@ -17,7 +17,7 @@
         <number_ref display_value="LNR">19e4341167301200f5c55bb557415aaa</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Task" name="task">de6a7841673022009b985bb557415a7e</super_class>
+        <super_class display_value="Task" name="task">aadf6870673212004ce75bb557415a80</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-01-05 21:30:58</sys_created_on>
